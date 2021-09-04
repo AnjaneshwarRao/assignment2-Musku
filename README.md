@@ -10,7 +10,7 @@ Manali is the only place in india where we can find different types of people,an
 
 ---
 # Travelling
-1. start from marryville
+1. >> start from marryville
 1. exit at 51 road
 1. after reaching to kansas
 1. travel towards Ucm
