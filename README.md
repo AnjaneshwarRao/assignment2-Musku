@@ -15,5 +15,6 @@ Manali is the only place in india where we can find different types of people,an
 >> 1. after reaching to kansas
 >> 1. travel towards Ucm 
 * Dancing
-_ new places
+- new places
 * travelling
+- climate
