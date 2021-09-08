@@ -10,17 +10,17 @@ Manali is the only place in india where we can find different types of people,an
 
 ---
 # Marryville To Miami
->> 1. Start from the marryville Travell towards Farney RD
->> 2. At the traffic circle,take the 2nd exit onto University Dr.
->> 3. Merge onto I-44E
->> 4. Use the right 2 lanes to take exit 291 A for I-24 E/I-65 S towards Nashville 
->>     1. take 2nd left exit.
->> 5. Merge onto I-65 S
->> 6. keep left to continue towars I-24 E
->> 7. Keep left at the fork to continue on Florida's Turnpike,follow signs for Oralndo/Turnpike S
->> 8. Turn left onto SW 13th St
->>     1. continue for the 20 miles.
->>     2. you reach your destination.
+ 1. Start from the marryville Travell towards Farney RD
+ 2. At the traffic circle,take the 2nd exit onto University Dr.
+ 3. Merge onto I-44E
+ 4. Use the right 2 lanes to take exit 291 A for I-24 E/I-65 S towards Nashville 
+    1. take 2nd left exit.
+ 5. Merge onto I-65 S
+ 6. keep left to continue towars I-24 E
+ 7. Keep left at the fork to continue on Florida's Turnpike,follow signs for Oralndo/Turnpike S
+ 8. Turn left onto SW 13th St
+     1. continue for the 20 miles.
+     2. you reach your destination.
 
 * Dancing
 - new places
@@ -39,3 +39,11 @@ The table shows food items to try in India.
 | Chiken Momos        | Delhi                |  $10   |
 | Mutton Soup         | Old Delhi            |  $ 7   |
 | Mutter Panner       | Jagpul Restreunt     |  $ 10  |
+------------
+
+# Pithy Quotes
+
+> A single twig breaks, but the bundle of twigs is strong. *Varun*
+> Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength. *Arnold Schwarzenegger*
+
+
