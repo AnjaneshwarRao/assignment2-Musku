@@ -43,7 +43,8 @@ The table shows food items to try in India.
 
 # Pithy Quotes
 
-> A single twig breaks, but the bundle of twigs is strong. *Varun*
-> Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength. *Arnold Schwarzenegger*
+> A single twig breaks, but the bundle of twigs is strong. __  *Varun*
+
+> Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength. - *Arnold Schwarzenegger*
 
 
