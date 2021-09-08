@@ -34,7 +34,7 @@ Link of AboutMe: <https://github.com/varunreddy13/assignment2-Musku/blob/main/Ab
 The table shows food items to try in India.
 
 | Food                | Location             | Amount |
-| ---                 | --:-                  | ---    |
+| :---                 | ---                  | ---    |
 | Biriyani            | Pista House          | $ 20   |
 | Chiken Momos        | Delhi                |  $10   |
 | Mutton Soup         | Old Delhi            |  $ 7   |
