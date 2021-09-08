@@ -47,4 +47,116 @@ The table shows food items to try in India.
 
 > Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength. - *Arnold Schwarzenegger*
 
+-----
 
+
+# code fencing
+
+
+> In graph theory, a branch of mathematics, a cycle basis of an undirected graph is a set of simple cycles that forms a basis of the cycle space of the graph. That is, it is a minimal set of cycles that allows every even-degree subgraph to be expressed as a symmetric difference of basis cycles.
+
+A fundamental cycle basis may be formed from any spanning tree or spanning forest of the given graph, by selecting the cycles formed by the combination of a path in the tree and a single edge outside the tree. Alternatively, if the edges of the graph have positive weights, the minimum weight cycle basis may be constructed in polynomial time.
+
+In planar graphs, the set of bounded cycles of an embedding of the graph forms a cycle basis. The minimum weight cycle basis of a planar graph corresponds to the Gomory–Hu tree of the dual graph.
+code: <https://en.wikipedia.org/wiki/Cycle_basis 
+
+
+
+int n;
+vector<vector<int>> adj;
+vector<char> color;
+vector<int> parent;
+int cycle_start, cycle_end;
+
+bool dfs(int v) {
+    color[v] = 1;
+    for (int u : adj[v]) {
+        if (color[u] == 0) {
+            parent[u] = v;
+            if (dfs(u))
+                return true;
+        } else if (color[u] == 1) {
+            cycle_end = v;
+            cycle_start = u;
+            return true;
+        }
+    }
+    color[v] = 2;
+    return false;
+}
+
+void find_cycle() {
+    color.assign(n, 0);
+    parent.assign(n, -1);
+    cycle_start = -1;
+
+    for (int v = 0; v < n; v++) {
+        if (color[v] == 0 && dfs(v))
+            break;
+    }
+
+    if (cycle_start == -1) {
+        cout << "Acyclic" << endl;
+    } else {
+        vector<int> cycle;
+        cycle.push_back(cycle_start);
+        for (int v = cycle_end; v != cycle_start; v = parent[v])
+            cycle.push_back(v);
+        cycle.push_back(cycle_start);
+        reverse(cycle.begin(), cycle.end());
+
+        cout << "Cycle found: ";
+        for (int v : cycle)
+            cout << v << " ";
+        cout << endl;
+    }
+}
+int n;
+vector<vector<int>> adj;
+vector<bool> visited;
+vector<int> parent;
+int cycle_start, cycle_end;
+
+bool dfs(int v, int par) { // passing vertex and its parent vertex
+    visited[v] = true;
+    for (int u : adj[v]) {
+        if(u == par) continue; // skipping edge to parent vertex
+        if (visited[u]) {
+            cycle_end = v;
+            cycle_start = u;
+            return true;
+        }
+        parent[u] = v;
+        if (dfs(u, parent[u]))
+            return true;
+    }
+    return false;
+}
+
+void find_cycle() {
+    visited.assign(n, false);
+    parent.assign(n, -1);
+    cycle_start = -1;
+
+    for (int v = 0; v < n; v++) {
+        if (!visited[v] && dfs(v, parent[v]))
+            break;
+    }
+
+    if (cycle_start == -1) {
+        cout << "Acyclic" << endl;
+    } else {
+        vector<int> cycle;
+        cycle.push_back(cycle_start);
+        for (int v = cycle_end; v != cycle_start; v = parent[v])
+            cycle.push_back(v);
+        cycle.push_back(cycle_start);
+        reverse(cycle.begin(), cycle.end());
+
+        cout << "Cycle found: ";
+        for (int v : cycle)
+            cout << v << " ";
+        cout << endl;
+    }
+}
+source code: <https://cp-algorithms.com/graph/finding-cycle.html
