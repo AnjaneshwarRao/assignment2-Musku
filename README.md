@@ -35,7 +35,7 @@ The table shows food items to try in India.
 
 | Food                | Location             | Amount |
 | ---                 | ---                  | ---:    |
-| Biriyani            | Pista House          | 200    |
+| Biriyani            | Pista House          | $ 20    |
 | Chiken Momos        | Delhi                |  $10   |
 | Mutton Soup         | Old Delhi            |  $ 7   |
 | Mutter Panner       | Jagpul Restreunt     |  $ 10  |
