@@ -28,3 +28,14 @@ Manali is the only place in india where we can find different types of people,an
 - climate
 
 Link of AboutMe: <https://github.com/varunreddy13/assignment2-Musku/blob/main/AboutMe.md>
+-----------------
+# Tables
+
+The table shows food items to try in India.
+
+| Food                | Location             | Amount |
+| ---                 | ---                  | ---:    |
+| Biriyani            | Pista House          | 200    |
+| Chiken Momos        | Delhi                |  $10   |
+| Mutton Soup         | Old Delhi            |  $ 7   |
+| Mutter Panner       | Jagpul Restreunt     |  $ 10  |
