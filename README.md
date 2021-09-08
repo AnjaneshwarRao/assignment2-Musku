@@ -113,47 +113,49 @@ void find_cycle() {
     }
 }
 
-int n;
-vector<vector<int>> adj;
-vector<bool> visited;
-vector<int> parent;
-int cycle_start, cycle_end;
+'''
 
-bool dfs(int v, int par) { // passing vertex and its parent vertex
-    visited[v] = true;
-    for (int u : adj[v]) {
-        if(u == par) continue; // skipping edge to parent vertex
-        if (visited[u]) {
-            cycle_end = v;
-            cycle_start = u;
-            return true;
+int n;
+vector<vector<int>> adj;<br>
+vector<bool> visited;<br>
+vector<int> parent;<br>
+int cycle_start, cycle_end;<br>
+
+bool dfs(int v, int par) { // passing vertex and its parent vertex,<br>
+    visited[v] = true;<br>
+    for (int u : adj[v]) {<br>
+        if(u == par) continue; // skipping edge to parent vertex<br>
+        if (visited[u]) {<br>
+            cycle_end = v;<br>
+            cycle_start = u;<br>
+            return true;<br>
         }
-        parent[u] = v;
-        if (dfs(u, parent[u]))
-            return true;
+        parent[u] = v;<br>
+        if (dfs(u, parent[u]))<br>
+            return true;<br>
     }
-    return false;
+    return false;<br>
 }
 
-void find_cycle() {
-    visited.assign(n, false);
-    parent.assign(n, -1);
-    cycle_start = -1;
+void find_cycle() {<br>
+    visited.assign(n, false);<br>
+    parent.assign(n, -1);<br>
+    cycle_start = -1;<br>
 
-    for (int v = 0; v < n; v++) {
-        if (!visited[v] && dfs(v, parent[v]))
-            break;
+    for (int v = 0; v < n; v++) {<br>
+        if (!visited[v] && dfs(v, parent[v]))<br>
+            break;<br>
     }
 
-    if (cycle_start == -1) {
-        cout << "Acyclic" << endl;
-    } else {
-        vector<int> cycle;
-        cycle.push_back(cycle_start);
-        for (int v = cycle_end; v != cycle_start; v = parent[v])
-            cycle.push_back(v);
-        cycle.push_back(cycle_start);
-        reverse(cycle.begin(), cycle.end());
+    if (cycle_start == -1) {<br>
+        cout << "Acyclic" << endl;<br>
+    } else {<br>
+        vector<int> cycle;<br>
+        cycle.push_back(cycle_start);<br>
+        for (int v = cycle_end; v != cycle_start; v = parent[v])<br>
+            cycle.push_back(v);<br>
+        cycle.push_back(cycle_start);<br>
+        reverse(cycle.begin(), cycle.end());<br>
 
         cout << "Cycle found: ";
         for (int v : cycle)
