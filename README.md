@@ -27,4 +27,4 @@ Manali is the only place in india where we can find different types of people,an
 * travelling
 - climate
 
-Link to the AboutMe <https://github.com/varunreddy13/assignment2-Musku/blob/main/AboutMe.md>
+Link of AboutMe: <https://github.com/varunreddy13/assignment2-Musku/blob/main/AboutMe.md>
